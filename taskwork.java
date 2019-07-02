@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package deneme2;
+package exponential_operation;
 
 /**
  *
@@ -39,7 +39,7 @@ public class taskwork
                 System.out.flush();
                 System.out.print(string + '.');
                 long sonuc = usAlma(taban,power);
-                System.out.println("sonuç: "+sonuc);
+                System.out.println("Result: "+sonuc);
                 
                 
                 Thread.sleep(power);
