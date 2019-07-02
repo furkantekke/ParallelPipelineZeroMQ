@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package deneme2;
+package exponential_operation;
 
 /**
  *
@@ -41,7 +41,7 @@ public class tasksink
                 System.out.println(sonuc1);
                 long end = System.currentTimeMillis();
 
-            System.out.println("\tToplam geçen zaman: " + (end - tstart) + " msec\n");
+            System.out.println("\tTotal time: " + (end - tstart) + " msec\n");
            
             }
             
