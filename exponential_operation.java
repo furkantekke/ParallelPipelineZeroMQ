@@ -1,5 +1,5 @@
 
-package deneme2;
+package exponential_operation;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import org.zeromq.ZMQ;
 import org.zeromq.ZContext;
 
 
-public class Deneme2
+public class Exponential_operation
 {
     public static void main(String[] args) throws Exception
     {
@@ -24,25 +24,25 @@ public class Deneme2
             ZMQ.Socket sink = context.createSocket(SocketType.PUSH);
             sink.connect("tcp://localhost:5558");
 
-            System.out.println("İşçiler hazır olduğunda enter a basınız: ");
+            System.out.println("Press enter when workers are ready: ");
             System.in.read();
-            System.out.println("Görevler işçilere gönderilecek\n");
+            System.out.println("Tasks will send to workers\n");
 
-                System.out.println("Üssü alınacak sayıyı giriniz");
+                System.out.println("Base number for exponential operation");
             Scanner scan = new Scanner(System.in);
             Integer taban= scan.nextInt();
             
             
-            System.out.println("Üs giriniz");
+            System.out.println("Exponent number for exponential operation");
             Integer us= scan.nextInt();
             
-             System.out.println("Kaç işçi ile hesaplamak istersiniz");
+             System.out.println("How many worker do you want");
              Integer isci= scan.nextInt();
             
              Integer dizi[]=new Integer[isci];
              
              for(int i=0;i<isci;i++){
-              System.out.println((i+1)+". iscinin gücünü giriniz");
+              System.out.println((i+1)+". worker power");
             Integer guc= scan.nextInt();
             dizi[i]=guc;
              }
